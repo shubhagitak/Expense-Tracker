@@ -4,6 +4,8 @@ const {v4:uuidv4}=require("uuid")
 
 const app=express();
 app.use(express.json());
+const cors = require("cors")
+app.use(cors())
 mongoose.connect(
    "mongodb+srv://Shubha:Shubha@cluster0.eoyjn.mongodb.net/"
 )
