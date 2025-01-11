@@ -5,7 +5,7 @@ const {v4:uuidv4}=require("uuid")
 const app=express();
 app.use(express.json());
 mongoose.connect(
-   "mongodb://localhost:27017/expense"
+   "mongodb+srv://Shubha:Shubha@cluster0.eoyjn.mongodb.net/"
 )
 .then(()=>{
     console.log("Connected to DB")
